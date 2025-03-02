@@ -14,8 +14,11 @@ max_speed = 300.0
 scale = Vector2(0.1, 0.1)
 texture = ExtResource("1_xjt63")
 
+[node name="Marker2D" type="Marker2D" parent="Sprite2D"]
+position = Vector2(800, 0)
+scale = Vector2(10, 10)
+
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-visible = false
 position = Vector2(23, 0)
 scale = Vector2(70.5096, 22.0965)
 shape = SubResource("CircleShape2D_rcvfx")
