@@ -4,7 +4,7 @@
 [ext_resource type="Texture2D" uid="uid://c6icfaok8th7" path="res://assets/player-ship.png" id="1_xjt63"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_rcvfx"]
-radius = 0.595665
+radius = 0.327174
 
 [node name="player" type="Area2D" groups=["player"]]
 script = ExtResource("1_2u4am")
@@ -19,6 +19,6 @@ position = Vector2(800, 0)
 scale = Vector2(10, 10)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(23, 0)
-scale = Vector2(70.5096, 22.0965)
+position = Vector2(1.90735e-06, 0)
+scale = Vector2(87.3496, 88.6965)
 shape = SubResource("CircleShape2D_rcvfx")
