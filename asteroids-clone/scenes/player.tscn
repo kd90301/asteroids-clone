@@ -1,6 +1,6 @@
 [gd_scene load_steps=4 format=3 uid="uid://d1lxkpo6a2rr"]
 
-[ext_resource type="Script" path="res://scenes/player.gd" id="1_2u4am"]
+[ext_resource type="Script" path="res://scripts/player.gd" id="1_2u4am"]
 [ext_resource type="Texture2D" uid="uid://c6icfaok8th7" path="res://assets/player-ship.png" id="1_xjt63"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_rcvfx"]
