@@ -20,5 +20,5 @@ scale = Vector2(10, 10)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2(1.90735e-06, 0)
-scale = Vector2(87.3496, 88.6965)
+scale = Vector2(110.31, 88.6965)
 shape = SubResource("CircleShape2D_rcvfx")
