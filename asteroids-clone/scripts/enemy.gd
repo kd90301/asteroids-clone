@@ -1,5 +1,6 @@
 extends Area2D
 
+var collectible = preload("res://scenes/collectible.tscn")
 @export var velocity := Vector2(0,0)
 @export var speed := 10.0
 
@@ -12,7 +13,7 @@ func _ready() -> void:
 
 func _on_area_entered(area_that_entered : Area2D) -> void:
 	if area_that_entered.is_in_group("bullet"):
-		queue_free()
+		on_death()
 		# need to generate pickups with this function 
 
 func _process(delta: float) -> void:
@@ -21,4 +22,11 @@ func _process(delta: float) -> void:
 	position.y = wrapf(position.y, 0, viewport_size.y)
 	
 	position += velocity  * delta
+
+func on_death() -> void:
+	queue_free()
+	# add child collectible to scene
+	var collectible_instance := collectible.instantiate()
+	add_child(collectible_instance)
+	collectible_instance.position = position
 	

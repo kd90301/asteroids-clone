@@ -13,3 +13,4 @@ func on_timer_timeout() -> void:
 	random_position.x = randf_range(0, viewport_size.x)
 	random_position.y = randf_range(0, viewport_size.y)
 	enemy_instance.position = random_position
+	
