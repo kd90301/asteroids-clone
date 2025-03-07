@@ -1,6 +1,6 @@
 extends Area2D
-
-var collectible = preload("res://scenes/collectible.tscn")
+#
+@onready var player = get_node("root/main/player")
 @export var velocity := Vector2(0,0)
 @export var speed := 10.0
 
@@ -8,6 +8,7 @@ var collectible = preload("res://scenes/collectible.tscn")
 func _ready() -> void:
 	area_entered.connect(_on_area_entered)
 	rotation = randf_range(0, PI*2)
+
 
 # Tween enemy position toward player position at spawn 
 
@@ -23,10 +24,10 @@ func _process(delta: float) -> void:
 	
 	position += velocity  * delta
 
+
+
+
 func on_death() -> void:
 	queue_free()
 	# add child collectible to scene
-	var collectible_instance := collectible.instantiate()
-	add_child(collectible_instance)
-	collectible_instance.position = position
 	
